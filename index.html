@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_Timer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+    <div class="container-fluid" id="timer">
+        <div class="d-flex justify-content-center mt-5">
+                <p class="html_timer h1 text-white text-monospace"></p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <p class="txt h4 text-white">Min<small>:</small>Sec</p>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <button id="increase" class="btn btn-primary ml-2">+</button>
+            <button id="decrease" class="btn btn-primary ml-2">-</button>
+            <button id="start" class="btn btn-success ml-2">start</button>
+            <button id="input" class="btn btn-danger ml-2">input</button>
+        </div>
+    </div>
+    <div id="input_num" style="display: none;">
+        <div class="input-group justify-content-center mt-5" >
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-primary text-white">Min:Sec</span>
+            </div>
+            <input type="number" aria-label="Min" class="form-control col-1" max="59" min="0" placeholder="0" id="min">
+            <input type="number" aria-label="Sec" class="form-control col-1" max="59" min="0" placeholder="0" id="sec"> 
+            <button class="btn btn-primary" id="ok">ok</button>
+          </div>
+        </div>
+    
+    <p class="h1 d-flex justify-content-center mt-5 text-white font-weight-bold" id="message"></p>
+    <a href="" class="btn btn-danger d-flex justify-content-center" id="timer">Restart</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
